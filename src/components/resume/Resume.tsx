@@ -2,7 +2,6 @@
 import React from "react";
 import { IoIosMail } from "react-icons/io";
 import { LuMapPinHouse } from "react-icons/lu";
-import { FaFileDownload } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 import { IoPhonePortrait } from "react-icons/io5";
 import * as SiIcons from "react-icons/si";
@@ -24,7 +23,6 @@ export const Resume: React.FC<{ className?: string }> = ({
   };
 
   const contact = personal.contact ?? {};
-  const meta = resumeInfo.meta ?? {};
 
   function formatDate(date?: string | DateRange): string {
     if (!date) return "";
@@ -376,15 +374,6 @@ export const Resume: React.FC<{ className?: string }> = ({
         <div className="flex items-center justify-between">
           <div>
             © {new Date().getFullYear()} {personal.name}
-          </div>
-          <div className="flex items-center gap-3">
-            <a
-              href={meta.pdf ?? "/resume.pdf"}
-              className="inline-flex items-center gap-2 text-sm underline"
-              download
-            >
-              <FaFileDownload className="w-4 h-4" /> Download PDF
-            </a>
           </div>
         </div>
       </footer>

@@ -4,606 +4,83 @@ export const PORTFOLIO_INFO: Portfolio = {
   meta: {
     createdAt: new Date().toISOString(),
     locale: "en-US",
-    url: "https://satya00089.github.io/portfolio", // update if you have a custom domain
     pdf: "/resume.pdf",
   },
   personal: {
-    name: "Satya Subudhi",
-    title: "Senior Engineer — Full Stack (Python & React)",
-    headline: "React · Python · FastAPI · IaC · Cloud",
+    name: "Chrisalyn Ballera",
+    title: "Student / Developer",
+    headline: "Student / Developer",
     // avatar can be a string, an object with { url, label }, or an array of those.
-    avatar: [
-      // use public root path so Vite serves the static asset from /public/profile.jpg
-      { url: "./profile.jpg", label: "" },
-      { url: "./profile1.jpg", label: "" },
-    ],
+    avatar: { url: "./images/ballera.jpg", label: "Chrisalyn Ballera" },
     summary:
-      "Senior Engineer with 7+ years of experience delivering enterprise-grade applications. Over the last 3 years I have focused on building production systems using Python (FastAPI) and React — designing APIs, building responsive frontends, and automating deployments with IaC. Experienced across AWS & Azure and comfortable owning full delivery from design to production.",
-    // optional hero summary used in the site hero; keeps a concise, senior-level intro tuned to your data
+      "Quietly becoming stronger, wiser, and better. I may not have it all figured out, but I trust the journey and believe my best chapters are still ahead.",
     hero: {
       summary:
-        "Senior Engineer & product-focused Full Stack developer (React, TypeScript, Python/FastAPI). I design resilient component systems, build production-grade APIs, and optimize for performance and accessibility — driving features from design through delivery on cloud platforms.",
+        "Quietly becoming stronger, wiser, and better. I may not have it all figured out, but I trust the journey and believe my best chapters are still ahead.",
     },
     contact: {
-      email: "satyasubudhi089@gmail.com",
-      phone: "+91 9937 446 070",
-      location: "Bangalore, India",
-      website: "https://satya00089.github.io/portfolio",
-      socials: [
-        {
-          label: "LinkedIn",
-          url: "https://www.linkedin.com/in/satya-subudhi/",
-          icon: "SiLinkedin",
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089",
-          icon: "SiGithub",
-        },
-        {
-          label: "Hugging Face",
-          url: "https://huggingface.co/spaces/satya00089/",
-          icon: "SiHuggingface",
-        },
-        {
-          label: "Kaggle",
-          url: "https://www.kaggle.com/satya00089",
-          icon: "SiKaggle",
-          size: 32,
-        },
-      ],
+      email: "ballerachrisalyn@gmail.com",
+      phone: "09396896440",
+      location: "Bucay, Abra",
     },
   },
-  highlights: [
-    "Senior Engineer at Unisys (Jun 2025 – Present)",
-    "5+ years focused on Python (FastAPI) and React",
-    "Experienced with AWS, Azure, Terraform, and CI/CD pipelines",
-  ],
+  highlights: [],
   skills: [
     {
       title: "Frontend",
       skills: [
-        {
-          name: "React",
-          level: 90,
-          icon: "SiReact",
-          category: "frontend",
-          years: 4,
-          note: "Used in production since 2020",
-        },
-        {
-          name: "TypeScript",
-          level: 85,
-          icon: "SiTypescript",
-          category: "frontend",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "JavaScript",
-          level: 90,
-          icon: "SiJavascript",
-          category: "frontend",
-          years: 7,
-          note: "Used in production since 2016",
-        },
-        {
-          name: "HTML5",
-          level: 90,
-          icon: "SiHtml5",
-          category: "frontend",
-          years: 7,
-        },
-        {
-          name: "CSS3",
-          level: 88,
-          icon: "SiCss3",
-          category: "frontend",
-          years: 7,
-        },
-        {
-          name: "Tailwind CSS",
-          level: 80,
-          icon: "SiTailwindcss",
-          category: "frontend",
-          years: 2,
-          note: "Used in production since 2022",
-        },
-        {
-          name: "Material-UI",
-          level: 80,
-          icon: "SiMaterialui",
-          category: "frontend",
-          years: 2,
-          note: "Used in production since 2022",
-        },
+        { name: "HTML/CSS", icon: "SiHtml5" },
+        { name: "JavaScript", icon: "SiJavascript" },
+        { name: "React", icon: "SiReact" },
+        { name: "Tailwind", icon: "SiTailwindcss" },
       ],
     },
     {
       title: "Backend",
       skills: [
-        {
-          name: "Python",
-          level: 88,
-          icon: "SiPython",
-          category: "backend",
-          years: 4,
-          note: "Used in production since 2020",
-        },
-        {
-          name: "FastAPI",
-          level: 80,
-          icon: "SiFastapi",
-          category: "backend",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Node.js",
-          level: 80,
-          icon: "SiNodedotjs",
-          category: "backend",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Express.js",
-          level: 75,
-          icon: "SiExpress",
-          category: "backend",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Java (Vert.x)",
-          level: 70,
-          icon: "SiJava",
-          category: "backend",
-          years: 3,
-          note: "Used in production from 2018-2021",
-        },
+        { name: "PHP", icon: "SiPhp" },
+        { name: "Laravel", icon: "SiLaravel" },
+        { name: "MySQL", icon: "SiMysql" },
       ],
     },
     {
-      title: "AI & ML",
+      title: "Tools",
       skills: [
-        {
-          name: "NumPy",
-          level: 85,
-          icon: "SiNumpy",
-          category: "data",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Pandas",
-          level: 85,
-          icon: "SiPandas",
-          category: "data",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Scikit-learn",
-          level: 80,
-          icon: "SiScikitlearn",
-          category: "data",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "TensorFlow",
-          level: 75,
-          icon: "SiTensorflow",
-          category: "data",
-          years: 2,
-          note: "Used in production since 2022",
-        },
-        {
-          name: "PyTorch",
-          level: 75,
-          icon: "SiPytorch",
-          category: "data",
-          years: 2,
-          note: "Used in production since 2022",
-        },
-        {
-          name: "RAG",
-          level: 70,
-          category: "data",
-          years: 1,
-          note: "Built POCs using LangChain and LlamaIndex",
-        },
-      ],
-    },
-    {
-      title: "Infrastructure & DevOps",
-      skills: [
-        {
-          name: "Terraform",
-          level: 80,
-          icon: "SiTerraform",
-          category: "devops",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Bicep",
-          level: 70,
-          category: "devops",
-          years: 2,
-          note: "Used in production since 2022",
-        },
-        {
-          name: "AWS",
-          level: 78,
-          icon: "SiAmazonaws",
-          category: "devops",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Azure",
-          level: 78,
-          icon: "SiMicrosoftazure",
-          category: "devops",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Docker",
-          level: 75,
-          icon: "SiDocker",
-          category: "devops",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "GitHub Actions",
-          level: 75,
-          icon: "SiGithubactions",
-          category: "devops",
-          years: 2,
-          note: "Used in production since 2022",
-        },
-      ],
-    },
-    {
-      title: "Databases",
-      skills: [
-        {
-          name: "PostgreSQL",
-          level: 80,
-          icon: "SiPostgresql",
-          category: "database",
-          years: 4,
-          note: "Used in production since 2020",
-        },
-        {
-          name: "MySQL",
-          level: 78,
-          icon: "SiMysql",
-          category: "database",
-          years: 4,
-          note: "Used in production since 2020",
-        },
-        {
-          name: "MongoDB",
-          level: 78,
-          icon: "SiMongodb",
-          category: "database",
-          years: 3,
-          note: "Used in production since 2021",
-        },
-        {
-          name: "Couchbase",
-          level: 70,
-          icon: "SiCouchbase",
-          category: "database",
-          years: 2,
-          note: "Used in production from 2019-2021",
-        },
-      ],
-    },
-    {
-      title: "Other Tools",
-      skills: [
-        {
-          name: "Git",
-          level: 90,
-          icon: "SiGit",
-          category: "tooling",
-          years: 7,
-          note: "Used in production since 2016",
-        },
-        {
-          name: "GitHub",
-          level: 88,
-          icon: "SiGithub",
-          category: "tooling",
-          years: 7,
-          note: "Used in production since 2016",
-        },
-        {
-          name: "Jira",
-          level: 85,
-          icon: "SiJira",
-          category: "tooling",
-          years: 5,
-          note: "Used in production since 2018",
-        },
-        {
-          name: "Confluence",
-          level: 80,
-          icon: "SiConfluence",
-          category: "tooling",
-          years: 5,
-          note: "Used in production since 2018",
-        },
-        {
-          name: "VS Code",
-          level: 90,
-          icon: "SiVisualstudiocode",
-          category: "tooling",
-          years: 7,
-          note: "Used in production since 2016",
-        },
+        { name: "Git", icon: "SiGit" },
+        { name: "GitHub", icon: "SiGithub" },
+        { name: "VS Code", icon: "SiVisualstudiocode" },
       ],
     },
   ],
-  experience: [
-    {
-      id: "unisys-senior-2025",
-      title: "Senior Engineer",
-      company: "Unisys",
-      location: "Bengaluru, India",
-      date: { start: "2025-06", present: true },
-      summary:
-        "Leading full-stack efforts around Python-based backends and React frontends for enterprise customers. Driving architecture, mentoring teammates and implementing IaC and cloud deployment practices.",
-      bullets: [
-        "Lead development of microservices using FastAPI and Python for enterprise-scale workloads.",
-        "Design and implement responsive React frontends and component libraries with TypeScript and Tailwind.",
-        "Drive IaC adoption using Terraform and Bicep; implement CI/CD pipelines and deployment automation.",
-        "Mentor engineers, conduct design reviews, and improve code quality and observability.",
-      ],
-      tech: [
-        "Python",
-        "FastAPI",
-        "React",
-        "TypeScript",
-        "Terraform",
-        "AWS",
-        "Azure",
-      ],
-    },
-    {
-      id: "unisys-se-2022",
-      title: "Software Engineer",
-      company: "Unisys",
-      location: "Bengaluru, India",
-      date: { start: "2022-01", end: "2025-05" },
-      summary:
-        "Worked on web and desktop applications, cloud deployment tooling, and multi-cloud automation for Unisys products.",
-      bullets: [
-        "Built desktop and web UI features using React, Electron.js, TypeScript and Node.js.",
-        "Implemented cloud deployment workflows for Azure (ARM) and AWS (CloudFormation).",
-        "Improved code quality and CI pipelines, addressing SonarQube findings and standardizing testing.",
-        "Delivered features around redeployment, resource deletions and automation across cloud providers.",
-      ],
-      tech: ["React", "Electron", "TypeScript", "Node.js", "Azure", "AWS"],
-    },
-    {
-      id: "unisys-rae-aircore",
-      title: "Software Engineer (RAE, AirCore projects)",
-      company: "Unisys",
-      location: "Bengaluru, India",
-      date: { start: "2018-03", end: "2021-12" },
-      summary:
-        "Worked on UI and backend components for airline/travel solutions and internal tooling.",
-      bullets: [
-        "Developed front-end UIs using Angular and React and integrated with Unisys Design System.",
-        "Built REST APIs using Java (Vert.x) and integrated with NoSQL stores (MongoDB, Couchbase).",
-        "Implemented role-based access with Keycloak and developed data visualization tools.",
-        "Contributed to NDC stabilization, import/export features and product maintenance.",
-      ],
-      tech: [
-        "Angular",
-        "React",
-        "Java (Vert.x)",
-        "MongoDB",
-        "Couchbase",
-        "Keycloak",
-      ],
-    },
-  ],
+  experience: [],
   projects: [
     {
-      id: "learn-algo",
-      title: "Learn Algo",
+      id: "saint-james-elders",
+      title: "Online Information and Management System for Saint James Elders",
+      short:
+        "A centralized web-based capstone project to streamline records management and improve administrative workflows.",
       description:
-        "Interactive visualizations that transform abstract concepts into intuitive understanding. Watch sorting, searching, and ML algorithms execute step-by-step.",
-      tags: ["Algorithms", "DSA", "ML", "AI", "Visualization", "Next.js"],
-      image:
-        "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXpqYWFhbnBraWt3ZXhvajZsdjg5andyMGZzY2VibGg3bXE0MWxwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2PuPWxuLV1FGyh03Ja/giphy.gif",
-      href: "https://www.learn-algo.com",
-      links: [
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/learn-algo",
-          icon: "SiGithub",
-        },
-      ],
-      isUnderDevelopment: false,
-    },
-    {
-      id: "landing-zone-orchestrator",
-      title: "Landing Zone Orchestrator",
-      description:
-        "A production-ready platform that transforms cloud infrastructure provisioning from manual IaC coding to an intuitive, form-driven workflow. Built with React, FastAPI, and MongoDB to generate validated Terraform templates for AWS, Azure, and GCP. Features include schema-driven form builder for VPC, Subnets, IAM, and networking resources, real-time Terraform code generation and validation, JWT-based authentication, MongoDB storage for projects and templates, and multi-cloud support.",
-      tags: [
-        "Terraform",
-        "IaC",
-        "React",
-        "FastAPI",
-        "MongoDB",
-        "AWS",
-        "Azure",
-        "Full Stack",
-      ],
-      image:
-        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGtuYjY1emtsZmNjMXp1czdrdXR5bXE5ZDJheHVvZjY1azZxYnJieiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qzImRjQVb2OUI84mTt/giphy.gif",
-      href: "https://orchestrator.next-zen.dev",
-      links: [
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/landing-zone-orchestrator-ui",
-          icon: "SiGithub",
-        },
-      ],
-      isUnderDevelopment: true,
-    },
-    {
-      id: "diagrammatic",
-      title: "Diagrammatic",
-      description:
-        "Diagrammatic (System Design Playground): A component library and living documentation for a design system.",
-      tags: ["System Design", "AI & ML", "React"],
-      image:
-        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTFnOGF3d3BodjFvY3NhanY5cnl5bmd4Z243aXB5M3hrOHg3d2tmeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WvzQektcJxs0oDFkHq/giphy.gif",
-      href: "https://diagrammatic.next-zen.dev",
-      links: [
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/diagrammatic",
-          icon: "SiGithub",
-        },
-      ],
-    },
-    {
-      id: "tic-tac-toe-ai",
-      title: "Tic Tac Toe AI",
-      description:
-        "A minimal Tic-Tac-Toe AI game built with Next.js to understand the Minimax algorithm.",
-      tags: ["Next.js", "AI", "Game", "Minimax"],
-      image:
-        "https://raw.githubusercontent.com/satya00089/tic-tac-toe/main/public/tic-tac-toe.png",
-      href: "https://satya00089.github.io/tic-tac-toe/",
-      links: [
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/tic-tac-toe",
-          icon: "SiGithub",
-        },
-      ],
-      isUnderDevelopment: false,
-    },
-    {
-      id: "mui-color-wheel",
-      title: "MUI Color Wheel",
-      description:
-        "A Material-UI based color wheel component with real-time color picking.",
-      tags: ["React", "Material-UI", "NPM Package", "Storybook"],
-      image:
-        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTJxYjhmdTVjam41aWlzczZreGZ2eXc5eThjdDRpMXgxYzVuYTAzMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tWnCyw4rmoFY8CmhLV/giphy.gif",
-      href: "https://mui-color-wheel.vercel.app/",
-      links: [
-        {
-          label: "Storybook",
-          url: "https://mui-color-wheel.vercel.app/",
-          icon: "SiStorybook",
-        },
-        {
-          label: "NPM",
-          url: "https://www.npmjs.com/package/mui-color-wheel",
-          icon: "SiNpm",
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/mui-color-wheel",
-          icon: "SiGithub",
-        },
-      ],
-      isUnderDevelopment: true,
-    },
-    {
-      id: "alochona",
-      title: "Alochona",
-      description:
-        "Alochona is an experimental chatbot hosted on Hugging Face Spaces. It uses OpenAI under the hood for responses. This project was built as a way to explore chatbot UIs, Hugging Face deployment, and integrating OpenAI APIs.",
-      image:
-        "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmc5dDY1c2ZnOGs0ODF0eDkwbzBvMHZ2ZXJvYml2amRmdzN2dnZueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7AFQj6uviWpwudbOWg/giphy.gif",
-      href: "https://huggingface.co/spaces/satya00089/alochona",
-      links: [
-        {
-          label: "Huggingface",
-          url: "https://huggingface.co/spaces/satya00089/alochona/tree/main",
-          icon: "SiHuggingface",
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/alochona",
-          icon: "SiGithub",
-        },
-      ],
-      tags: ["Chatbot", "OpenAI", "Hugging Face", "Beginner Project"],
-    },
-    {
-      id: "night-sky",
-      title: "Night Skyline",
-      description:
-        "A breathtaking recreation of the city skyline under a starlit night sky, capturing the serene beauty and glowing atmosphere of the evening.",
-      tags: ["React", "CSS"],
-      image:
-        "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2RjaHAxY3N3enY0d3RldWVpczg2ZTNzMHhsY2dpam0yYnp6bWh2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P2jddT5c9g9OeHI17p/giphy.gif",
-      href: "https://satya00089.github.io/night-sky",
-      links: [
-        {
-          label: "Watch",
-          url: "https://www.loom.com/share/1516014366e34135a67f5dd4e551fec5",
-          icon: "FaPlay",
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/night-sky",
-          icon: "SiGithub",
-        },
-      ],
+        "A centralized web-based capstone project designed to streamline records management and improve administrative workflows for Saint James Elders. Developed using Laravel, PHP, MySQL, HTML/CSS, and JavaScript.",
+      tags: ["Laravel", "PHP", "MySQL", "HTML/CSS", "JavaScript", "Capstone"],
       isUnderDevelopment: true,
     },
   ],
   education: [
     {
-      degree: "B.Tech in Computer Science Engineering",
-      school: "Biju Patnaik University of Technology",
-      date: "2013-2017",
+      degree: "Tertiary",
+      school: "Data Center College of Bangued",
+      date: { start: "2023", present: true },
     },
     {
-      degree: "Higher Secondary",
-      school: "Bellaguntha Science College",
-      date: "2011-2013",
-    },
-    {
-      degree: "High School",
-      school: "G.T High School Bellaguntha",
-      date: "2011",
+      degree: "Secondary",
+      school: "Our Lady of Fatima School",
+      date: { start: "2021", end: "2023" },
     },
   ],
-  certifications: [
-    {
-      name: "Microsoft Certified: Azure Fundamentals (AZ-900)",
-      issuer: "Microsoft",
-      date: "2022",
-      url: "https://www.credly.com/badges/56ba404b-b2ec-49d7-b869-d41c8c88d7b5",
-    },
-    {
-      name: "Terraform Associate",
-      issuer: "HashiCorp",
-      date: "2023",
-    },
-  ],
+  certifications: [],
   extras: {
-    languages: [{ name: "English", level: "Native" }],
-    interests: ["astronomy", "music"],
+    languages: [],
+    interests: [],
   },
 };
 
@@ -625,7 +102,6 @@ export const tagColors: TagColors = {
   "Hugging Face": "bg-orange-100 text-orange-800",
   Beginner: "bg-cyan-100 text-cyan-800",
   "Beginner Project": "bg-cyan-100 text-cyan-800",
-  // Landing Zone Orchestrator tags
   FastAPI: "bg-teal-500 text-white",
   MongoDB: "bg-green-600 text-white",
   Terraform: "bg-purple-600 text-white",
@@ -641,4 +117,10 @@ export const tagColors: TagColors = {
   Visualization: "bg-orange-100 text-purple-900",
   "Next.js": "bg-black text-white",
   "Full Stack": "bg-gradient-to-r from-blue-500 to-purple-600 text-white",
+  Laravel: "bg-red-100 text-red-800",
+  PHP: "bg-indigo-100 text-indigo-800",
+  MySQL: "bg-blue-100 text-blue-800",
+  "HTML/CSS": "bg-orange-100 text-orange-800",
+  JavaScript: "bg-yellow-100 text-yellow-800",
+  Capstone: "bg-green-100 text-green-800",
 };

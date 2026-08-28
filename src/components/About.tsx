@@ -9,7 +9,6 @@ export const About: React.FC = () => {
   const personal = PORTFOLIO_INFO.personal;
   const name = personal.name ?? "Your Name";
   const avatar = personal.avatar;
-  const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
 
   const features = useMemo(() => PORTFOLIO_INFO.highlights ?? [], []);
   const heroSummary =
@@ -174,14 +173,6 @@ export const About: React.FC = () => {
                     onKeyDown={(e) => handleKeyActivation(e, "#projects")}
                   >
                     See my work
-                  </a>
-
-                  <a
-                    href={resumeHref}
-                    className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-3 text-sm font-semibold text-foreground hover:bg-muted"
-                    onKeyDown={(e) => handleKeyActivation(e, resumeHref)}
-                  >
-                    Download resume
                   </a>
                 </motion.div>
               </div>

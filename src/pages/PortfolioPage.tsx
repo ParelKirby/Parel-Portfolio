@@ -5,7 +5,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 import { Header } from "../components/shared/Header";
 import { ProjectsGrid } from "../components/ProjectsGrid";
 import { SkillsList } from "../components/SkillsList";
-import { ContactForm } from "../components/ContactForm";
+import { Education } from "../components/Education";
 import { Footer } from "../components/shared/Footer";
 import { PORTFOLIO_INFO } from "../config/portfolioData";
 import { About } from "../components/About";
@@ -14,11 +14,9 @@ import type { Project } from "../types/portfolio";
 import { ProjectModal } from "../components/ProjectModal";
 import { ScrollProgressBar } from "../components/shared/ScrollProgressBar";
 import { ScrollToTop } from "../components/shared/ScrollToTop";
-import CLIResume from "../components/CLIResume";
 
 const PortfolioPage: React.FC = () => {
   const [selected, setSelected] = useState<Project | null>(null);
-  const [showCLI, setShowCLI] = useState(false);
   const [showHello, setShowHello] = useState(true);
 
   return (
@@ -29,12 +27,10 @@ const PortfolioPage: React.FC = () => {
           { href: "#about", label: "About" },
           { href: "#projects", label: "Projects" },
           { href: "#skills", label: "Skills" },
+          { href: "#education", label: "Education" },
           { href: "#contact", label: "Contact" },
         ]}
-        onTryCLI={() => setShowCLI(true)}
       />
-      {/* CLI panel (docked / overlay) */}
-      <CLIResume open={showCLI} onClose={() => setShowCLI(false)} />
 
       {/* About / hero: hidden while hello animation plays */}
       <AnimatePresence>
@@ -88,16 +84,22 @@ const PortfolioPage: React.FC = () => {
           <SkillsList skills={PORTFOLIO_INFO.skills} isBar={true} />
         </section>
 
+        <section id="education" className="py-8">
+          <h2 className="text-2xl font-semibold text-[var(--brand)]">
+            Educational Background
+          </h2>
+          <p className="mb-6 mt-1 text-sm text-gray-500 dark:text-gray-400">
+            My academic journey.
+          </p>
+          <Education education={PORTFOLIO_INFO.education} />
+        </section>
+
         <section id="contact" className="py-8">
           <h2 className="text-2xl font-semibold text-[var(--brand)]">Contact</h2>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
             Tell me about your project, or just say hi.
           </p>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-2xl bg-[var(--surface)] border border-[var(--border)]">
-              <ContactForm />
-            </div>
-
+          <div className="mt-6">
             <div className="p-6 rounded-2xl bg-[var(--surface)] border border-[var(--border)] flex flex-col gap-4">
               <div>
                 <div className="font-semibold">Let's collaborate</div>
@@ -109,20 +111,14 @@ const PortfolioPage: React.FC = () => {
               <div className="mt-2">
                 <div className="font-semibold">Quick contact</div>
                 <div className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Email: satyasubudhi089@gmail.com
+                  Email: ballerachrisalyn@gmail.com
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                  Location: Remote
+                  Phone: 09396896440
                 </div>
-              </div>
-              <div className="mt-auto">
-                <div className="text-sm font-medium">Resume</div>
-                <a
-                  href="/"
-                  className="block mt-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700"
-                >
-                  Download PDF
-                </a>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Location: Bucay, Abra
+                </div>
               </div>
             </div>
           </div>
