@@ -7,6 +7,7 @@ use App\Models\Profile;
 use App\Models\Project;
 use App\Models\Skill;
 use App\Models\SkillCategory;
+use App\Models\SocialLink;
 use Illuminate\Database\Seeder;
 
 class PortfolioSeeder extends Seeder
@@ -19,9 +20,9 @@ class PortfolioSeeder extends Seeder
             'headline' => 'Student / Developer',
             'summary' => 'Quietly becoming stronger, wiser, and better. I may not have it all figured out, but I trust the journey and believe my best chapters are still ahead.',
             'hero_summary' => 'Quietly becoming stronger, wiser, and better. I may not have it all figured out, but I trust the journey and believe my best chapters are still ahead.',
-            'email' => 'ballerachrisalyn@gmail.com',
-            'phone' => '09396896440',
-            'location' => 'Bucay, Abra',
+            'email' => 'parelkirby@gmail.com',
+            'phone' => '09495909683',
+            'location' => 'San Isidro, Abra',
             'avatar_path' => 'images/parel.jpg',
             'avatar_label' => 'Parel Kirby',
         ]);
@@ -82,6 +83,22 @@ class PortfolioSeeder extends Seeder
             'sort_order' => 0,
         ]);
 
+        SocialLink::query()->create([
+            'label' => 'Facebook',
+            'url' => 'https://www.facebook.com/kirby.parel.9',
+            'icon' => 'SiFacebook',
+            'size' => '2x',
+            'sort_order' => 0,
+        ]);
+
+        SocialLink::query()->create([
+            'label' => 'GitHub',
+            'url' => 'https://github.com/ParelKirby',
+            'icon' => 'SiGithub',
+            'size' => '2x',
+            'sort_order' => 1,
+        ]);
+
         Education::query()->create([
             'degree' => 'Tertiary',
             'school' => 'Data Center College of Bangued',
@@ -92,7 +109,7 @@ class PortfolioSeeder extends Seeder
 
         Education::query()->create([
             'degree' => 'Secondary',
-            'school' => 'Our Lady of Fatima School',
+            'school' => 'Abra State Institute of Science and Technology-Bangued',
             'start_date' => '2021',
             'end_date' => '2023',
             'sort_order' => 1,

@@ -17,7 +17,7 @@ return [
     | External services
     |--------------------------------------------------------------------------
     */
-    'contact_email' => env('CONTACT_EMAIL', 'ballerachrisalyn@gmail.com'),
+    'contact_email' => env('CONTACT_EMAIL', 'parelkirby@gmail.com'),
     'mail_service_url' => env('MAIL_SERVICE_URL', 'https://mail-service-nine.vercel.app'),
     'rag_api_url' => env('RAG_API_URL', 'https://portfolio-rag-tau.vercel.app'),
 

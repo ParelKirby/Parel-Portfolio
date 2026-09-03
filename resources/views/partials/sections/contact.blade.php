@@ -41,7 +41,7 @@
                                 aria-label="{{ $s['label'] }}"
                                 class="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--bg)] px-4 py-2 text-base text-[var(--text)] hover:border-[var(--brand)] hover:text-[var(--brand)] transition-colors"
                             >
-                                <x-icon name="{{ strtolower($s['icon']) === 'sifacebook' ? 'facebook' : 'globe' }}" class="w-4 h-4" />
+                                <x-icon name="{{ strtolower($s['icon']) === 'sifacebook' ? 'facebook' : (strtolower($s['icon']) === 'sigithub' ? 'github' : 'globe') }}" class="w-4 h-4" />
                                 {{ $s['label'] }}
                             </a>
                         @endforeach

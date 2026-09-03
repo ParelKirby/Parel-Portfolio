@@ -16,6 +16,9 @@
         content="Parel Kirby — Student / Developer. Portfolio showcasing skills, projects, education, and contact info."
     />
 
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/github-markdown.css') }}" />
+
     <script>
         (function () {
             try {
@@ -31,7 +34,6 @@
         })();
     </script>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('head')
 </head>
 <body class="min-h-screen scroll-smooth relative bg-[var(--bg)] text-[var(--text)]">
@@ -58,5 +60,7 @@
     @include('partials.cli.terminal')
 
     @stack('modals')
+
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
